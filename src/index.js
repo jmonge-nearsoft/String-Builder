@@ -46,7 +46,8 @@ StringBuilder.prototype = {
     rep: function( string , times){
 
         for(var i =0 ; i<=times - 1 ; i++){
-            this.buffer.push(string);
+            //this.buffer.push(string);
+            this.cat(string);
         }
 
         return this;
@@ -62,7 +63,7 @@ StringBuilder.prototype = {
     },
     string: function(){
 
-        var concatenatedContent = this.buffer.join(' ');
+        var concatenatedContent = this.buffer.join(' ').replace(/,/g , '');
 
         return concatenatedContent;
     },
