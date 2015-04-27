@@ -2,7 +2,7 @@
   "name": "string_builder",
   "version": "1.0.0",
   "description": "Javascript library to manage strings.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "make test"
   },
